@@ -1,0 +1,57 @@
+<%- include("header"); -%>
+    <div class="main-section">
+        <div class="side-bar">
+            <button class="side-bar-item">
+                <a href="#">Search Result</a>
+            </button>
+            <button class="side-bar-item">
+                <a href="#">All Team</a>
+            </button>
+            <button class="side-bar-item">
+                <a href="#">Core</a>
+            </button>
+            <button class="side-bar-item">
+                <a href="#">Developers</a>
+            </button>
+            <button class="side-bar-item">
+                <a href="#">Designers</a>
+            </button>
+            <button class="side-bar-item">
+                <a href="#">Mentors</a>
+            </button>
+            <button type="button" class="btn btn-dark add-btn">+ ADD</button>
+        </div>
+        <div class="movie-section">
+            <div class="movie-box top">
+                <img class="movie-poster" src="<%= poster_path[0] %>">
+                <p class="title top-title left-title"><%= titles[0] %></p>
+            </div>
+
+            <div class="movie-box top">
+                <img class="movie-poster" src="<%= poster_path[1] %>">
+                <p class="title top-title middle-title"><%= titles[1] %></p>
+            </div>
+
+            <div class="movie-box top">
+                <img class="movie-poster" src="<%= poster_path[2] %>">
+                <p class="title top-title right-title"><%= titles[2] %></p>
+            </div>
+
+            <div class="movie-box bottom">
+                <img class="movie-poster" src="<%= poster_path[3] %>">
+                <p class="title bottom-title left-title"><%= titles[3] %></p>
+            </div>
+
+            <div class="movie-box bottom">
+                <img class="movie-poster" src="<%= poster_path[4] %>">
+                <p class="title bottom-title middle-title"><%= titles[4] %></p>
+            </div>
+
+            <div class="movie-box bottom">
+                <img class="movie-poster" src="<%= poster_path[5] %>">
+                <p class="title bottom-title right-title"><%= titles[5] %></p>
+            </div>
+</div>
+        </div>
+    </div>
+<%- include("footer"); -%>
